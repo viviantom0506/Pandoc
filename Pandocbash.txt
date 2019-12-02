@@ -1,0 +1,6 @@
+#!/bin/bash
+ cd documents
+cd pandoc-test
+ pandoc --version
+ pandoc Reflectionhw6s.docx -t markdown -o  reflectionspaperr.md
+pandoc reflectionspaperr.md --pdf-engine=pdflatex -o reflectionspaperr.pdf
